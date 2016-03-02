@@ -1,7 +1,7 @@
 import Ember from 'ember';
 import LinearScale from 'ember-d3-components/utils/scales/d3-linear-scale';
 
-const { Controller, observer } = Ember;
+const { Controller } = Ember;
 
 export default Controller.extend({
   xScale: LinearScale.create({domain: [0, 100], range: [0, 440]}),
@@ -10,7 +10,6 @@ export default Controller.extend({
   chartOptions: {
     width: 500,
     height: 500,
-    chartTitle: "XY Chart",
     title: { x: 250, y: 15, text: "XY Line Chart", transform: "" },
     xAxis: { transform: "translate(35,455)", label: { x: 250, y: 495, text: "X Axis", transform: "" } },
     yAxis: { transform: "translate(35,25)", label: { x: -240, y: 10, text: "Y Axis", transform: "rotate(-90)" } },
