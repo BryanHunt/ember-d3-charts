@@ -10,7 +10,10 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BryanHunt/ember-d3-charts.git"
+  },
   "engines": {
     "node": ">= 0.10.0"
   },
@@ -48,4 +51,8 @@
   "ember-addon": {
     "configPath": "tests/dummy/config"
   }
+  "bugs": {
+    "url": "https://github.com/BryanHunt/ember-d3-charts/issues"
+  },
+  "homepage": "https://github.com/BryanHunt/ember-d3-charts#readme"
 }
