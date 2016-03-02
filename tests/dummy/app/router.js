@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('xychart');
   this.route('bubblechart');
   this.route('barchart');
+  this.route('areachart');
 });
 
 export default Router;
