@@ -8,6 +8,7 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('xychart');
   this.route('bubblechart');
+  this.route('barchart');
 });
 
 export default Router;
