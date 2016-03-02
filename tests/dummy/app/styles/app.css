@@ -56,3 +56,7 @@ body {
 .menu {
   margin-bottom: 20px;
 }
+
+.menu-item {
+  margin-right: 10px;
+}

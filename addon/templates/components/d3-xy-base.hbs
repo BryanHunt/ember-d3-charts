@@ -1,0 +1,17 @@
+{{#d3-svg width=options.width height=options.height}}
+  <defs>
+    {{#d3-clip-path}}
+      <rect x={{clip.x}} y={{clip.y}} width={{clip.width}} height={{clip.height}}></rect>
+    {{/d3-clip-path}}
+  </defs>
+  {{d3-grid class="grid x-grid" orientation="bottom" scale=options.xGrid.scale width=plotWidth height=plotHeight transform=options.xGrid.transform}}
+  {{d3-grid class="grid y-grid" orientation="left" scale=options.yGrid.scale width=plotWidth height=plotHeight transform=options.yGrid.transform}}
+  {{d3-axis class="axis x-axis" orientation="bottom" scale=options.xAxis.scale transform=options.xAxis.transform}}
+  {{d3-axis class="axis y-axis" orientation="left" scale=options.yAxis.scale transform=options.yAxis.transform}}
+  {{d3-text value=options.title.text x=options.title.x y=options.title.y transform=options.title.transform}}
+  {{d3-text value=options.xAxis.label.text x=options.xAxis.label.x y=options.xAxis.label.y transform=options.xAxis.label.transform}}
+  {{d3-text value=options.yAxis.label.text x=options.yAxis.label.x y=options.yAxis.label.y transform=options.yAxis.label.transform}}
+  {{#d3-plot transform=options.plot.transform}}
+    {{yield}}
+  {{/d3-plot}}
+{{/d3-svg}}
