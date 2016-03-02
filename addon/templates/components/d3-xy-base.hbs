@@ -4,8 +4,12 @@
       <rect x={{clip.x}} y={{clip.y}} width={{clip.width}} height={{clip.height}}></rect>
     {{/d3-clip-path}}
   </defs>
-  {{d3-grid class="grid x-grid" orientation="bottom" scale=options.xGrid.scale width=plotWidth height=plotHeight transform=options.xGrid.transform}}
-  {{d3-grid class="grid y-grid" orientation="left" scale=options.yGrid.scale width=plotWidth height=plotHeight transform=options.yGrid.transform}}
+  {{#if options.xGrid}}
+    {{d3-grid class="grid x-grid" orientation="bottom" scale=options.xGrid.scale width=plotWidth height=plotHeight transform=options.xGrid.transform}}
+  {{/if}}
+  {{#if options.yGrid}}
+    {{d3-grid class="grid y-grid" orientation="left" scale=options.yGrid.scale width=plotWidth height=plotHeight transform=options.yGrid.transform}}
+  {{/if}}
   {{d3-axis class="axis x-axis" orientation="bottom" scale=options.xAxis.scale transform=options.xAxis.transform}}
   {{d3-axis class="axis y-axis" orientation="left" scale=options.yAxis.scale transform=options.yAxis.transform}}
   {{d3-text value=options.title.text x=options.title.x y=options.title.y transform=options.title.transform}}
