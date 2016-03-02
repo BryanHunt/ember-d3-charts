@@ -15,7 +15,7 @@ export default Controller.extend({
     xAxis: { transform: "translate(35,455)", label: { x: 250, y: 495, text: "X Axis", transform: "" } },
     yAxis: { transform: "translate(35,25)", label: { x: -240, y: 10, text: "Y Axis", transform: "rotate(-90)" } },
     yGrid: { transform: "translate(35,25)" },
-    plot: { transform: "translate(35,25)", paddingLeft: 35, paddingRight: 25, paddingTop: 25, paddingBottom: 45, showDots: true,
+    plot: { transform: "translate(35,25)", paddingLeft: 35, paddingRight: 25, paddingTop: 25, paddingBottom: 45,
       barWidthTransform: function(dataPoint, scale) {return scale.rangeBand();}
     }
   },

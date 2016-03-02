@@ -16,7 +16,7 @@ export default Controller.extend({
     yAxis: { transform: "translate(35,25)", label: { x: -240, y: 10, text: "Y Axis", transform: "rotate(-90)" } },
     xGrid: { transform: "translate(35,455)" },
     yGrid: { transform: "translate(35,25)" },
-    plot: { transform: "translate(35,25)", paddingLeft: 35, paddingRight: 25, paddingTop: 25, paddingBottom: 45, showDots: true }
+    plot: { transform: "translate(35,25)", paddingLeft: 35, paddingRight: 25, paddingTop: 25, paddingBottom: 45 }
   },
 
   data: [{x: 0, y: 10, r: 5}, {x: 10, y: 20, r: 7}, {x: 20, y: 65, r: 2}, {x: 30, y: 35, r: 0}, {x: 50, y: 25, r: 5}, {x: 70, y: 55, r: 6}, {x: 80, y: 17, r: 9}, {x: 90, y: 40, r: 4}],

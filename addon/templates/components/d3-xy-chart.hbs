@@ -1,6 +1,6 @@
 {{#d3-xy-base options=options}}
-    {{d3-line xScale=options.plot.xScale yScale=options.plot.yScale data=data}}
-    {{#if options.plot.showDots}}
-      {{d3-circle xScale=options.plot.xScale yScale=options.plot.yScale data=data}}
-    {{/if}}
+  {{d3-line xScale=options.plot.xScale yScale=options.plot.yScale data=data}}
+  {{#if options.plot.showDots}}
+    {{d3-circle xScale=options.plot.xScale yScale=options.plot.yScale data=data}}
+  {{/if}}
 {{/d3-xy-base}}
