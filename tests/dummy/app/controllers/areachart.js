@@ -23,9 +23,9 @@ export default Controller.extend({
 
   init() {
     this.set('chartOptions.xAxis.scale', this.get('xScale'));
-    this.set('chartOptions.yAxis.scale', this.get('yScale'));
+    this.set('chartOptions.yAxis.scale', this.get('y1Scale'));
     this.set('chartOptions.xGrid.scale', this.get('xScale'));
-    this.set('chartOptions.yGrid.scale', this.get('yScale'));
+    this.set('chartOptions.yGrid.scale', this.get('y1Scale'));
     this.set('chartOptions.plot.xScale', this.get('xScale'));
     this.set('chartOptions.plot.y0Scale', this.get('y0Scale'));
     this.set('chartOptions.plot.y1Scale', this.get('y1Scale'));
