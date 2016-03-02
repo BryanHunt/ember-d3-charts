@@ -50,7 +50,7 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
-  }
+  },
   "bugs": {
     "url": "https://github.com/BryanHunt/ember-d3-charts/issues"
   },
