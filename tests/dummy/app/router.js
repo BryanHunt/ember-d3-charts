@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('barchart');
   this.route('areachart');
   this.route('piechart');
+  this.route('stackedareachart');  
 });
 
 export default Router;
