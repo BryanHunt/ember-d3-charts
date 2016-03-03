@@ -1,5 +1,5 @@
 {{#d3-xy-chart options=options}}
-  {{d3-area xScale=options.plot.xScale y0Scale=options.plot.y0Scale y1Scale=options.plot.y1Scale transition=d3Transition data=data}}
+  {{d3-area xScale=options.plot.xScale y0Scale=options.plot.y0Scale y1Scale=options.plot.y1Scale transition=d3Transition xAccessor=xAccessor yAccessor=yAccessor y0Accessor=y0Accessor data=data}}
   {{#if options.plot.drawLine}}
     {{d3-line xScale=options.plot.xScale yScale=options.plot.y1Scale data=data}}
   {{/if}}

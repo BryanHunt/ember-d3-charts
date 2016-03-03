@@ -1,3 +1,3 @@
 {{#d3-xy-chart options=options}}
-  {{d3-circle xScale=options.plot.xScale yScale=options.plot.yScale rScale=options.plot.rScale fill=options.plot.fill stroke=options.plot.stroke transition=d3Transition data=data}}
+  {{d3-circle xScale=options.plot.xScale yScale=options.plot.yScale rScale=options.plot.rScale fill=options.plot.fill stroke=options.plot.stroke transition=d3Transition xAccessor=xAccessor yAccessor=yAccessor rAccessor=rAccessor data=data}}
 {{/d3-xy-chart}}
