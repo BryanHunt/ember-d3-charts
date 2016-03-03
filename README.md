@@ -8,7 +8,14 @@ This project is very much in the experimental phase and the API is in flux.
 Use with caution.
 
 Things that seem to be working:
-* XY Line Charts
+* Line Charts
+* Bar Charts
+* Area Charts
+* Bubble Charts
+* Pie Charts
+* Stacked Area Charts
+
+If you have questions, you can generally find me on Slack in the EmberJS Community.
 
 This is a fairly significant undertaking and I would welcome additional contributors.
 
