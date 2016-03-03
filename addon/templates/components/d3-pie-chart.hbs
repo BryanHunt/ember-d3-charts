@@ -1,0 +1,8 @@
+{{#d3-svg width=options.width height=options.height}}
+  {{#if options.title}}
+    {{d3-text value=options.title.text x=options.title.x y=options.title.y transform=options.title.transform}}
+  {{/if}}
+  {{#d3-plot transform=options.plot.transform}}
+    {{d3-arc outerRadius=100 innerRadius=0 transition=d3Transition fill=options.plot.fill data=layoutData}}
+  {{/d3-plot}}
+{{/d3-svg}}

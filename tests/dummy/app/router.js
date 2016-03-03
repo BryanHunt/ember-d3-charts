@@ -6,10 +6,11 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('xychart');
+  this.route('linechart');
   this.route('bubblechart');
   this.route('barchart');
   this.route('areachart');
+  this.route('piechart');
 });
 
 export default Router;
