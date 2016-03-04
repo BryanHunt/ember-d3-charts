@@ -6,10 +6,10 @@ const { computed } = Ember;
 export default Ember.Component.extend({
   layout,
 
-  clip: computed('plotWidth', 'plotHeight', 'options.plot.paddingLeft', 'options.plot.paddingTop', function() {
+  clip: computed('plotWidth', 'plotHeight', function() {
     return {
-      x: this.get('options.plot.paddingLeft'),
-      y: this.get('options.plot.paddingTop'),
+      x: 0,
+      y: 0,
       width: this.get('plotWidth'),
       height: this.get('plotHeight')
     };
