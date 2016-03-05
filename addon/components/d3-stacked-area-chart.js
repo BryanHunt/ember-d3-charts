@@ -1,7 +1,7 @@
 import Ember from 'ember';
 import layout from '../templates/components/d3-stacked-area-chart';
 import StackLayout from 'ember-d3-components/utils/layouts/d3-stack-layout';
-import Accessor from 'ember-d3-components/utils/accessor';
+import Accessor from 'ember-d3-components/utils/d3-data-accessor';
 
 export default Ember.Component.extend({
   layout,
