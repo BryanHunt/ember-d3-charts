@@ -1,0 +1,5 @@
+{{#d3-xy-chart options=options}}
+  {{#each layoutData as |series|}}
+    {{d3-bar orientation=xAxis.orientation xScale=options.plot.xScale y0Scale=options.plot.y0Scale yScale=options.plot.yScale barWidthTransform=options.plot.barWidthTransform transition=d3Transition xAccessor=xAccessor yAccessor=yAccessor y0Accessor=y0Accessor fill=options.plot.fill data=series}}
+  {{/each}}
+{{/d3-xy-chart}}
