@@ -14,6 +14,7 @@ Things that seem to be working:
 * Bubble Charts
 * Pie Charts
 * Stacked Area Charts
+* Stacked Bar Charts
 
 If you have questions, you can generally find me on Slack in the EmberJS Community.
 
