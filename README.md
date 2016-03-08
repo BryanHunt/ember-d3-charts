@@ -2,7 +2,7 @@
 
 This addon provides EmberJS components for charting data with d3.js.
 
-See it in action: http://bryanhunt.github.io/#/d3
+See it in action: http://bryanhunt.github.io/#/d3charts
 
 This project is very much in the experimental phase and the API is in flux.  
 Use with caution.
