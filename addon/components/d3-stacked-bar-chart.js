@@ -17,15 +17,13 @@ export default Ember.Component.extend({
     });
 
     this.yAccessor = this.yAccessor || yAccessor;
+    this.d3layout = this.d3layout || StackLayout.create({offset: 0});
+    this.d3Transition = this.d3Transition || function(component, d3Data) {
+      d3Data.transition();
+    }
   },
-
-  d3layout: StackLayout.create({offset: 0}),
 
   layoutData: Ember.computed('data', function() {
     return this.get('d3layout').layout(this.get('data'));
-  }),
-
-  d3Transition(component, d3Data) {
-    d3Data.transition();
-  }
+  })
 });

@@ -4,7 +4,10 @@ import layout from '../templates/components/d3-bubble-chart';
 export default Ember.Component.extend({
   layout,
 
-  d3Transition(component, d3Data) {
-    d3Data.transition();
+  init() {
+    this._super(...arguments);
+    this.d3Transition = this.d3Transition || function(component, d3Data) {
+      d3Data.transition();
+    }
   }
 });
