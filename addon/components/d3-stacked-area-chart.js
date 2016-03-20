@@ -17,7 +17,7 @@ export default Ember.Component.extend({
     });
 
     this.yAccessor = this.yAccessor || yAccessor;
-    this.d3layout = this.d3layout || StackLayout.create({offset: 0});
+    this.d3layout = this.d3layout || StackLayout.create();
     this.d3Transition = this.d3Transition || function(omponent, d3Data) {
       d3Data.transition();
     };
