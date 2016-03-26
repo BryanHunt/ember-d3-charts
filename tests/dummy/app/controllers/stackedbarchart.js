@@ -36,6 +36,6 @@ export default Controller.extend({
     this.set('chartOptions.plot.y0Scale', this.get('y0Scale'));
     this.set('chartOptions.plot.yScale', this.get('yScale'));
 
-    this.set('chartOptions.plot.fill', (d, j) => {return d.c;});
+    this.set('chartOptions.plot.fill', (d) => {return d.c;});
   }
 });
