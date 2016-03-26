@@ -49,7 +49,8 @@
     "ember-cli-htmlbars": "^1.0.1"
   },
   "ember-addon": {
-    "configPath": "tests/dummy/config"
+    "configPath": "tests/dummy/config",
+    "demoURL": "http://bryanhunt.github.io/#/d3charts"
   },
   "bugs": {
     "url": "https://github.com/BryanHunt/ember-d3-charts/issues"
